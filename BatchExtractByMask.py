@@ -21,3 +21,6 @@ for ras in rasters:
     outname = os.path.join(outws, os.path.basename(ras).split(".")[0] + "_clip.tif")  #指定输出文件的命名方式（以被裁剪文件名+_clip.tif命名）
     out_extract = arcpy.sa.ExtractByMask(ras, mask)  #执行按掩模提取操作
     out_extract.save(outname)  #保存数据
+    
+#基于Python 2.7和Arcpy环境，需要ArcGIS Desktop 10.2 
+#文件生成自 VS 2019 的项目（project）
