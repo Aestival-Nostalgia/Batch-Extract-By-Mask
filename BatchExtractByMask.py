@@ -24,3 +24,4 @@ for ras in rasters:
     
 #基于Python 2.7和Arcpy环境，需要ArcGIS Desktop 10.2 
 #文件生成自 VS 2019 的项目（project）
+#不要忘记配置Py 2.7 32位环境，以及VS的旧版本Py调试器，代码效率很高
